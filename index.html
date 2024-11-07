@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Checkrr.tech</title>
+</head>
+<body>
+    <div class="header">
+        <a href="#home" class="logo">
+            <img class="check" src="WhatsApp_Image_2024-11-07_at_16.07.35_86b6a2eb-removebg-preview.png" alt="Checkrr Logo">
+        </a>
+        <a href="#" class="login">Login</a>
+        <a href="#" class="signup">Signup</a>
+        <div class="menu-icon" id="menuIcon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <h1>COMING SOON !!</h1>
+    
+    <script >document.getElementById("menuIcon").addEventListener("click", function() {
+        const loginButton = document.querySelector(".login");
+        const signupButton = document.querySelector(".signup");
+        
+        if (loginButton.style.display === "none" && signupButton.style.display === "none") {
+            loginButton.style.display = "block";
+            signupButton.style.display = "block";
+        } else {
+            loginButton.style.display = "none";
+            signupButton.style.display = "none";
+        }
+    });
+    </script>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.check {
+    height: 200px;
+    margin-left: 30px;
+    margin-top: -50px;
+}
+
+.login, .signup {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.login {
+    margin-left: auto;
+    margin-top: -50px;
+}
+
+.signup {
+    margin-left: 30px;
+    margin-top: -50px;
+}
+
+/* H1 Styling */
+h1 {
+    font-weight: 700;
+    font-size: 7rem;
+    margin-left: 350px;
+    margin-top: 150px;
+}
+
+/* Menu icon styling */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.menu-icon div {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+    margin-top: -16px;
+}
+
+/* Responsive Styling */
+@media (max-width: 895px) {
+    .login, .signup {
+        display: none; /* Hide login/signup buttons by default */
+    }
+
+    .menu-icon {
+        display: flex; /* Show the menu icon */
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        margin-left: 25px;
+    }
+
+    .check {
+        width: 200px;
+        margin-left: 10px;
+    }
+}
+
+    </style>
+</body>
+</html>
